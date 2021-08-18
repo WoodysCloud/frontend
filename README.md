@@ -130,11 +130,29 @@ https://www.tablesgenerator.com/html_tables
 
 
 
-
-### HTML List
+### HTML Lists
 https://www.w3schools.com/html/html_lists.asp
 
 중첩목록(Nested List): 여러 수준(레벨)으로 구성된 목록
+
+
+
+### HTML Images
+https://www.w3schools.com/html/html_images.asp
+
+alt: alternative
+
+
+
+### HTML Video
+https://www.w3schools.com/html/html5_video.asp
+
+
+
+### HTML YouTube
+https://www.w3schools.com/html/html_youtube.asp
+
+
 
 
 
