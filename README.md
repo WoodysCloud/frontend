@@ -70,6 +70,11 @@ https://www.w3schools.com/html/html_attributes.asp
 
 
 
+### HTML Headings
+https://www.w3schools.com/html/html_headings.asp
+
+
+
 ### HTML Paragraphs
 https://www.w3schools.com/html/html_paragraphs.asp
 
@@ -117,7 +122,19 @@ https://www.w3schools.com/html/html_filepaths.asp
 
 
 
+### HTML Tables
+https://www.w3schools.com/html/html_tables.asp
 
+table generator
+https://www.tablesgenerator.com/html_tables
+
+
+
+
+### HTML List
+https://www.w3schools.com/html/html_lists.asp
+
+중첩목록(Nested List): 여러 수준(레벨)으로 구성된 목록
 
 
 
