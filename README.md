@@ -151,3 +151,62 @@ https://www.w3schools.com/html/html5_video.asp
 ### HTML YouTube
 
 https://www.w3schools.com/html/html_youtube.asp
+
+### HTML Semantics
+
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
+### HTML Block & Inline
+
+https://www.w3schools.com/html/html_blocks.asp
+
+> 포함관계에 대한 특성
+>
+> - 블럭요소: 다른 블럭요소, 인라인 요소, 콘텐츠 모두 포함 가능
+> - 인라인 요소: 다른 인라인 요소, 콘텐츠는 포함 가능, 블럭 요소는 포함 불가능
+> - 예외: a - 인라인 요소이지만 블럭요소도 포함 가능
+
+### HTML Entities
+
+https://www.w3schools.com/html/html_entities.asp
+
+> HTML 마크업 용도로 fix된 기호는 대체 코드를 사용
+> <, >, &, ", '
+> 공백을 여러칸 띄울 때: 대체 코드를 사용
+> 브라우저 렌더링용 대체코드: © => &copy;
+
+### HTML id, class
+
+https://www.w3schools.com/html/html_id.asp
+https://www.w3schools.com/html/html_classes.asp
+
+> id 특성
+>
+> - 하나의 HTML 문서 내에서 동일한 id 이름을 사용할 수 없음.
+> - 하나의 HTML 문서 내에서 고유해야 함.
+> - 하나의 HTML Element에 id이름을 여러 개 붙일 수 없음.
+>
+> class 특성
+>
+> - 하나의 HTML 문서 내에서 동일한 class이름을 여러번 사용할 수 있음.
+> - 하나의 HTML Element에 여러가지 class이름을 붙일 수 있음.
+
+## CSS
+
+### CSS Introduction
+
+https://www.w3schools.com/css/css_intro.asp
+
+### CSS Syntax
+
+https://www.w3schools.com/css/css_syntax.asp
+
+### CSS Selector
+
+https://www.w3schools.com/css/css_selectors.asp
+
+### CSS How To
+
+https://www.w3schools.com/css/css_howto.asp
+
+> js에서 css를 제어할 때 인라인 방식으로 제어함.
