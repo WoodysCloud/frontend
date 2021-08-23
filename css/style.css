@@ -137,21 +137,41 @@ table {
 /* page css */
 .header {
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 100px;
 }
+
+.logo {
+  margin-top: 38px;
+}
+
+.gnb {
+  margin-top: 45px;
+}
+
+.gnb-list {
+  display: flex;
+}
+
 .gnb-list-item {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
+  margin-left: 30px;
 }
+
 .gnb-list-link {
   color: #191919;
   text-decoration: none;
 }
+
 .gnb-list-link:hover {
   color: rgb(16, 201, 195);
   /* a: 투명도(0,0 ~ 1.0) */
   color: rgba(16, 201, 195, 0.6);
 }
+
 .section01 {
   height: 315px;
   background-color: #f6f6f6;
@@ -159,6 +179,7 @@ table {
   box-sizing: border-box;
   text-align: center;
 }
+
 .section-heading {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -166,6 +187,7 @@ table {
   color: #191919;
   margin-bottom: 35px;
 }
+
 .paragraph {
   font-family: "NanumSquare", sans-serif;
   font-size: 16px;
@@ -173,20 +195,94 @@ table {
   line-height: 1.6;
   font-style: italic;
 }
+
+.group {
+  display: flex;
+  justify-content: center;
+}
+
 .figure {
   width: 340px;
   height: 300px;
+  overflow: hidden;
 }
+
 .figure-image {
   width: 340px;
   height: 300px;
 }
+
 .figure-video {
-  width: 340px;
   height: 300px;
 }
+
 .footer {
   height: 280px;
   background-color: #141414;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 100px 0px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.copyright-company {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 27px;
+}
+
+.sitemap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 108px;
+  width: 230px;
+}
+
+.sitemap-item {
+  margin-bottom: 12px;
+  width: 60px;
+  margin-left: 55px;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 10px 0;
+  }
+  .logo {
+    margin-top: 10px;
+    /* 인라인 요소에 text-align을 적용 가능 */
+    text-align: center;
+  }
+  .gnb {
+    margin-top: 15px;
+  }
+  .gnb-list {
+    justify-content: center;
+  }
+  .gnb-list-item:first-child {
+    margin-left: 0;
+  }
+  .section-heading {
+    font-size: 24px;
+  }
+  .paragraph {
+    padding: 0 25px;
+  }
+  .paragraph br {
+    diplay: none;
+  }
+  .group {
+    flex-direction: column;
+  }
+  .figure {
+    margin: 10px auto;
+  }
 }
