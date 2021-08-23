@@ -130,4 +130,63 @@ table {
   border-spacing: 0;
 }
 
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Nunito Sans', sans-serif; */
+/* font-family: 'NanumSquare', sans-serif; */
+
 /* page css */
+.header {
+  height: 100px;
+}
+.gnb-list-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+.gnb-list-link {
+  color: #191919;
+  text-decoration: none;
+}
+.gnb-list-link:hover {
+  color: rgb(16, 201, 195);
+  /* a: 투명도(0,0 ~ 1.0) */
+  color: rgba(16, 201, 195, 0.6);
+}
+.section01 {
+  height: 315px;
+  background-color: #f6f6f6;
+  padding-top: 100px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.section-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  color: #191919;
+  margin-bottom: 35px;
+}
+.paragraph {
+  font-family: "NanumSquare", sans-serif;
+  font-size: 16px;
+  color: #191919;
+  line-height: 1.6;
+  font-style: italic;
+}
+.figure {
+  width: 340px;
+  height: 300px;
+}
+.figure-image {
+  width: 340px;
+  height: 300px;
+}
+.figure-video {
+  width: 340px;
+  height: 300px;
+}
+.footer {
+  height: 280px;
+  background-color: #141414;
+  color: #fff;
+}
