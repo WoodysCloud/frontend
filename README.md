@@ -372,6 +372,9 @@ https://www.w3schools.com/cssref/pr_class_display.asp
 > push: commit된 snapshot을 remote repository에 업로드(업데이트)하는 것
 >
 > pull: remote repository의 상태를 다운로드하여 local repository의 상태를 업데이트 하는 것(fetch + merge)
+>
 > fetch: remote repository의 상태를 가져오기만 하는 것
+>
 > merge: 가져온 업데이트된 상태들을 하나로 합치는 것
+>
 > pull request: 각각 업데이트된 서로 다른 개발 내용을 remote repository 관리자가 merge하도록 요청하는 것
