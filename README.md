@@ -171,8 +171,11 @@ https://www.w3schools.com/html/html_blocks.asp
 https://www.w3schools.com/html/html_entities.asp
 
 > HTML 마크업 용도로 fix된 기호는 대체 코드를 사용
+>
 > <, >, &, ", '
+>
 > 공백을 여러칸 띄울 때: 대체 코드를 사용
+>
 > 브라우저 렌더링용 대체코드: © => &copy;
 
 ### HTML id, class
@@ -270,13 +273,17 @@ https://www.w3schools.com/css/css_background.asp
 \*\* CSS 상속
 
 > 부모요소에 적용된 CSS style이 자식요소에 적용되는 것
+>
 > 모든 css 속성이 상속되는 것은 아님
 
 \*\* CSS color 코드값
 
 > CSS에서 16진수 코드값과 10진수 코드값을 사용할 수 있음.
+>
 > 16진수 코드값: #16진수숫자 6자리(0~9, a~f).
+>
 > 10진수 코드값: rgb(10진수숫자, 10진수숫자, 10진수숫자)
+>
 > 10진수 코드값 + 투명도 표시: rgba(10진수숫자, 10진수숫자, 10진수숫자, 투명도(0.0 ~ 1.0)
 
 \*\*\* CSS Flexbox
@@ -295,7 +302,9 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
 ### 반응형 웹
 
 > 반응형 웹, 적응형 웹
+>
 > OSMU(One Source Multi Use) 여부로 반응형과 적응형을 구분
+>
 > Web Front End에서의 OSMU의 기준은 HTML Source Code => Contents
 
 ### RWD Viewport
@@ -307,6 +316,7 @@ https://www.w3schools.com/css/css_rwd_viewport.asp
 https://www.w3schools.com/css/css3_mediaqueries.asp
 
 > @media 키워드를 사용해서 break point를 설정을 하고, 그에 따른 독립된 코드 블럭을 실행할 수 있게 하는 것
+>
 > break point(변경점)
 
 ```
@@ -328,12 +338,15 @@ body{color:red;}
 > 가로방향
 >
 > text-align: center - 텍스트, 인라인요소
+>
 > margin-left: auto, margin-right: auto - 가로길이가 정해진 블럭요소
+>
 > justify-content: center - flex 박스 배치
 
 > 세로방향
 >
 > align-items: center - flex 박스 배치
+>
 > line-height: 텍스트
 
 ### CSS Display
