@@ -196,6 +196,22 @@ table {
   font-style: italic;
 }
 
+.more-link {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border: 1px solid red;
+  line-height: 40px;
+  text-decoration: none;
+  color: #191919;
+  margin-top: 20px;
+}
+
+.more-link:hover {
+  background: red;
+  color: #fff;
+}
+
 .group {
   display: flex;
   justify-content: center;
