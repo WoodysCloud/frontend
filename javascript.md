@@ -159,3 +159,35 @@ https://www.w3schools.com/js/js_this.asp
 > querySelectorAll()
 >
 > - 한 종류의 메소드로 id, class, tag 요소로 접근하는데 모두 사용 가능
+> - CSS Selector 사용방법과 동일한 방법으로 요소 종류를 구분
+
+### Create, Append Element(Node)
+
+> document.createElement()
+>
+> document.appendChild()
+
+### Vanilla js / Jquery
+
+> Vanilla JS: 라이브러리나 프레임워크 사용없이 순수 자바스크립트로 개발하는 것
+>
+> jquery: JavaScript 라이브러리
+>
+> - $() == $(document).ready(): HTML Element가 모두 렌더링된 이후에 실행
+
+### JS Event
+
+https://www.w3schools.com/js/js_htmldom_events.asp
+
+> Event: 상태 변화에 따라 발생되는 신호
+>
+> 이벤트 종류
+>
+> - 마우스: 클릭, 움직임, 휠, ...
+> - 키보드: 키 누름, ...
+
+### JS Event Listener(Handler)
+
+> addEventListener(이벤트, 함수)
+>
+> - jquery: on()
