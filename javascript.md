@@ -10,7 +10,7 @@
 >
 > 함수
 >
-> 객체(Object), Class
+> 배열, 객체(Object), Class
 
 ### JS Data Type
 
@@ -66,10 +66,96 @@ https://www.w3schools.com/js/js_loop_while.asp
 
 > 조건문(반복문), 반복문은 프로그램 알고리즘의 논리적인 흐름에 관여하는 명령구문
 
+### JS Function
+
+https://www.w3schools.com/js/js_functions.asp
+
+> 함수 선언 기본 형식
+>
+> 함수에 매개변수 사용하는 형식
+>
+> 함수에 return을 사용하는 형식
+
+### JS Arrow Function
+
+https://www.w3schools.com/js/js_arrow_function.asp
+
+### JS Array
+
+https://www.w3schools.com/js/js_arrays.asp
+
+> 배열 데이터를 변수에 대입 => 배열변수에는 배열데이터가 저장되어 있는 메모리 위치값 저장
+>
+> const 키워드를 사용했을 때 전체 배열 데이터의 변화 없이 원소 변경, 추가, 삭제 가능
+>
+> const 키워드를 사용했을 때 전체 배열 데이터의 변경은 불가능
+>
+> 배열 데이터도 객체 데이터로 선언됨
+
+### JS Object
+
+https://www.w3schools.com/js/js_objects.asp
+
+> window 브라우저 관련 전역 객체
+
+### JS Class
+
+https://www.w3schools.com/js/js_classes.asp
+
+> 클래스는 객체 데이터를 생성할 수 있도록 하는 설계도
+
 ### JS this
+
+https://www.w3schools.com/js/js_this.asp
 
 > this가 사용되는 위치
 >
 > - Object 안에 있는 method에서 사용: 포함하는 object를 가리킴
 > - 전역 공간에서 사용: 전역 객체를 가리킴
 > - 함수 공간에서 사용: 전역 객체를 가리킴
+
+### JavaScript에서 사용할 수 있는 객체(제공되는 객체)의 종류
+
+> API: 어플리케이션 프로그래밍을 위해 여러 서비스/프레임워크/라이브러리에서 제공되는 객체 또는 함수
+
+> HTML% API, ES6 API(Object): 내장 객체
+>
+> - geolocation, ...
+
+> ES5/ES6 Object: 내장 객체
+>
+> - Math, Date, ...
+
+> DOM(Document Object Model)
+>
+> - HTML Element를 객체로 만든 것
+
+> BOM(Browser Object Model)
+>
+> - 브라우저와 연관된 객체
+
+> 외부 API
+>
+> - 지도 API, 날씨 데이터 API의 객체
+
+### DOM 콘텐츠
+
+> HTML문서에 없던 콘텐츠를 프로그래밍을 통해서 생성 => 동적(Dynamic) 생성
+
+### Finding DOM
+
+> HTML4
+>
+> getElementById()
+>
+> getElementsByTagName()
+>
+> getElementsByClassName()
+>
+> HTML5
+>
+> querySelector()
+>
+> querySelectorAll()
+>
+> - 한 종류의 메소드로 id, class, tag 요소로 접근하는데 모두 사용 가능
