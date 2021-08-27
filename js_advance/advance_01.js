@@ -15,13 +15,13 @@ document.getElementById("text1").innerHTML = "Hello World";
 
 const para = document.createElement("p");
 const node = document.createTextNode("Hello");
-const element = para.appendChild(node);
-document.querySelectorAll(".text2")[0].appendChild(element);
+para.appendChild(node);
+document.querySelectorAll(".text2")[0].appendChild(para);
 
 const para1 = document.createElement("p");
 const node1 = document.createTextNode("Hello");
-const element1 = para1.appendChild(node1);
-document.querySelectorAll(".text2")[1].appendChild(element1);
+para1.appendChild(node1);
+document.querySelectorAll(".text2")[1].appendChild(para1);
 
 let text2Element = document.querySelectorAll(".text2");
 for (let i = 0; i < text2Element.length; i++) {

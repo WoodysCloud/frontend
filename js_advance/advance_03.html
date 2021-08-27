@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="list" id="list">
+      <li class="list-item">item1</li>
+      <li id="remove-item" class="list-item">item2</li>
+      <li class="list-item">item3</li>
+    </ul>
+
+    <script>
+      // 동적 생성
+      const listItem = document.createElement("li");
+      const listText = document.createTextNode("item4");
+      listItem.appendChild(listText);
+
+      // 추가
+      const listDom = document.querySelector(".list");
+      listDom.appendChild(listItem);
+
+      // 삭제
+      const listParent = document.getElementById("list");
+      const removeChild = document.getElementById("remove-item");
+      listParent.removeChild(removeChild);
+
+      // 변경
+      const changeNode = document.querySelectorAll(".list-item");
+      console.log(changeNode);
+      changeNode[0].innerHTML = "<span>text3</span>";
+    </script>
+  </body>
+</html>
