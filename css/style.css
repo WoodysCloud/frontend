@@ -172,6 +172,20 @@ table {
   color: rgba(16, 201, 195, 0.6);
 }
 
+.hamburger-menu {
+  width: 30px;
+  height: 30px;
+  /* transparent: 투명색 */
+  background-color: transparent;
+  border: 0;
+  display: none;
+}
+
+.hamburger-menu > img {
+  width: 30px;
+  height: 30px;
+}
+
 .section01 {
   height: 315px;
   background-color: #f6f6f6;
@@ -210,6 +224,10 @@ table {
 .more-link:hover {
   background: red;
   color: #fff;
+}
+
+.tab {
+  display: none;
 }
 
 .group {
@@ -267,37 +285,99 @@ table {
 
 @media screen and (max-width: 900px) {
   .header {
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 0 10px 0;
+    height: 50px;
+    /* flex-direction: column; */
+    padding: 0 20px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* position: absolute/fixed 설정시 width는 자식요소에 맞춰짐 */
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
   }
+
   .logo {
     margin-top: 10px;
     /* 인라인 요소에 text-align을 적용 가능 */
     text-align: center;
   }
+
   .gnb {
-    margin-top: 15px;
+    /* 시작(start) 상태 */
+    margin-top: 0;
+    position: absolute;
+    top: 50px;
+    right: -200px;
+    opacity: 0;
+    background-color: #ffffff;
+    width: 200px;
+    padding: 50px 30px 100px;
+    box-sizing: border-box;
+
+    transition: opacity 0.3s ease-out, right 0.3s ease-out;
   }
+
+  .gnb.active {
+    /* 끝(end) 상태 */
+    opacity: 1;
+    right: 0;
+  }
+
   .gnb-list {
     justify-content: center;
+    flex-direction: column;
   }
-  .gnb-list-item:first-child {
+
+  .gnb-list-item {
     margin-left: 0;
+    margin-bottom: 70px;
   }
+
+  .hamburger-menu {
+    display: block;
+    margin-top: 6px;
+  }
+
   .section-heading {
     font-size: 24px;
   }
+
   .paragraph {
     padding: 0 25px;
   }
+
   .paragraph br {
     diplay: none;
   }
+
+  .tab {
+    display: flex;
+    width: 340px;
+    margin: 30px auto;
+  }
+
+  .tab-item {
+    width: 33.333%;
+    background: #eeeeee;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .tab-item.active {
+    background: #17b7d4;
+    color: #ffffff;
+  }
+
   .group {
     flex-direction: column;
+    display: none;
   }
+
+  .group.active {
+    display: flex;
+  }
+
   .figure {
     margin: 10px auto;
   }

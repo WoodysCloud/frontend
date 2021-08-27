@@ -11,12 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"
     />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/page_function.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -36,19 +37,27 @@
           </li>
         </ul>
       </nav>
+      <button type="button" class="hamburger-menu">
+        <!-- jpg, png: 비트맵 이미지-->
+        <!-- svg: 벡터 이미지 - 크기 변화에 이미지가 깨지지 않음 -->
+        <img src="images/hamburger-menu.svg" />
+      </button>
     </header>
     <section class="section01">
       <h2 class="section-heading">UI/UX & Graphic Designer</h2>
       <p class="paragraph">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <a href="" class="more-link">더보기</a>
     </section>
     <section class="section02">
-      <div class="group">
+      <ul class="tab">
+        <li class="tab-item active">G1</li>
+        <li class="tab-item">G2</li>
+        <li class="tab-item">G3</li>
+      </ul>
+      <div class="group active">
         <figure class="figure">
           <img src="images/image_01.jpg" alt="" class="figure-image" />
         </figure>

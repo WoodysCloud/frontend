@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .input {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Element</h1>
+
+    <div>
+      <input type="text" class="input input1" placeholder="값" />
+      <input type="text" class="input input2" placeholder="값" />
+      <input type="text" class="input result" />
+      <button type="button" class="input btn1">더하기</button>
+    </div>
+    <script>
+      const input1 = document.querySelector(".input1");
+      const input2 = document.querySelector(".input2");
+      const result = document.querySelector(".result");
+      const btn1 = document.querySelector(".btn1");
+
+      btn1.addEventListener("click", function () {
+        let inputValue1 = Number(input1.value);
+        let inputValue2 = Number(input2.value);
+        let sum = inputValue1 + inputValue2;
+        result.value = sum;
+      });
+    </script>
+  </body>
+</html>
