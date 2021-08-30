@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .image-slide {
+        position: relative;
+        width: 580px;
+        height: 435px;
+        overflow: hidden;
+      }
+
+      .image-item {
+        position: absolute;
+        top: 0;
+        left: 100%;
+      }
+
+      .image-item.in {
+        left: 0;
+        transition: left 2s;
+      }
+
+      .image-item.out {
+        left: -100%;
+        transition: left 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="image-slide">
+      <!-- 580x435 -->
+      <img src="../images/image_01.jpg" class="image-item in" />
+      <img src="../images/image_02.jpg" class="image-item" />
+      <img src="../images/image_03.jpg" class="image-item" />
+    </section>
+    <div>
+      <button type="button" class="btn-play">Play</button>
+      <button type="button" class="btn-pause">Pause</button>
+    </div>
+  </body>
+
+  <script>
+    let currentIndex = 0;
+    let nextIndex = 1;
+    let intervalId;
+
+    const allImageItem = document.querySelectorAll(".image-item");
+    const playButton = document.querySelector(".btn-play");
+    const pauseButton = document.querySelector(".btn-pause");
+
+    const slide = () => {
+      // 설정된 시간마다 주기적으로 지정된 기능을 반복실행
+      // 시간: ms(milli sec) - 1/1000 초
+      intervalId = setInterval(function () {
+        if (nextIndex > allImageItem.length - 1) {
+          nextIndex = 0;
+        }
+
+        for (let i = 0; i < allImageItem.length; i++) {
+          allImageItem[i].classList.remove("in");
+          allImageItem[i].classList.remove("out");
+        }
+
+        allImageItem[currentIndex].classList.add("out");
+        allImageItem[nextIndex].classList.add("in");
+
+        currentIndex = nextIndex;
+        nextIndex++;
+      }, 2000);
+    };
+
+    slide();
+
+    playButton.addEventListener("click", () => {
+      slide();
+    });
+
+    pauseButton.addEventListener("click", () => {
+      clearInterval(intervalId);
+    });
+  </script>
+</html>
